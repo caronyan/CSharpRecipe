@@ -41,6 +41,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ComparableImpl.cs" />
+    <Compile Include="MultiReturns.cs" />
     <Compile Include="UnionType.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

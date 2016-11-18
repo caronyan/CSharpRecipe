@@ -43,8 +43,10 @@
     <Compile Include="ClonableClass.cs" />
     <Compile Include="ComparableImpl.cs" />
     <Compile Include="GenericSample.cs" />
+    <Compile Include="HookByPartial.cs" />
     <Compile Include="MultiReturns.cs" />
     <Compile Include="OrderProc.cs" />
+    <Compile Include="RestrictGenericClass.cs" />
     <Compile Include="UnionType.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UsingRange.cs" />

@@ -9,6 +9,8 @@ namespace Recipe.ClassAndGeneric
 {
     public class DisposableList<T> : IList<T> where T : class, IDisposable
     {
+        T DefaultData=default(T);
+
         private List<T> _items = new List<T>();
 
         private void Delete(T item) => item.Dispose();

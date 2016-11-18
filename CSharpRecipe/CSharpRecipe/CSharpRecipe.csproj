@@ -49,6 +49,12 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Recipe.ClassAndGeneric\Recipe.ClassAndGeneric.csproj">
+      <Project>{30d178ca-678f-480b-9c1a-e3a3fbbb7e29}</Project>
+      <Name>Recipe.ClassAndGeneric</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

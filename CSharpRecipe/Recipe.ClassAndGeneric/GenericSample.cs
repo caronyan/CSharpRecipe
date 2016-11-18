@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -25,12 +26,14 @@ namespace Recipe.ClassAndGeneric
             this.second = second;
         }
 
-        public T1 First {
-            get { return first;}
+        public T1 First
+        {
+            get { return first; }
         }
 
-        public T2 Second {
-            get { return second;}
+        public T2 Second
+        {
+            get { return second; }
         }
 
         public bool Equals(GenericSample<T1, T2> other)
@@ -46,7 +49,53 @@ namespace Recipe.ClassAndGeneric
 
         public override int GetHashCode()
         {
-            return FirstComparer.GetHashCode(first)*37 + SecondComparer.GetHashCode(second);
+            return FirstComparer.GetHashCode(first) * 37 + SecondComparer.GetHashCode(second);
+        }
+    }
+
+    /// <summary>
+    /// A generic collection
+    /// </summary>
+    /// <typeparam name="T"></typeparam>
+    public class FixedSizeCollection<T>
+    {
+        #region Properties
+
+        public static int InstanceCount { get; set; }
+
+        public int ItemCount { get; private set; }
+
+        private T[] Items { get; set; }
+
+        #endregion //Properties
+
+        public FixedSizeCollection(int items)
+        {
+            FixedSizeCollection<T>.InstanceCount++;
+            this.Items = new T[items];
+        }
+
+        public int AddItem(T item)
+        {
+            if (this.ItemCount < this.Items.Length)
+            {
+                this.Items[this.ItemCount] = item;
+                return this.ItemCount++;
+            }
+            else
+            {
+                throw new Exception("Item queue is full");
+            }
+        }
+
+        public T GetItem(int index)
+        {
+            if (index >= this.Items.Length && index >= 0)
+            {
+                throw new ArgumentOutOfRangeException(nameof(index));
+            }
+
+            return this.Items[index];
         }
     }
 }

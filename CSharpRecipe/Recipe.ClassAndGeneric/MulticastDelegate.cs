@@ -1,11 +1,17 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
+using System.Runtime.Serialization;
+using System.Security.Permissions;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace Recipe.ClassAndGeneric
 {
+    /// <summary>
+    /// Test method group
+    /// </summary>
     public class TestInvokeIntReturn
     {
         public static int Method1()
@@ -22,8 +28,7 @@ namespace Recipe.ClassAndGeneric
 
         public static int Method3()
         {
-            Console.WriteLine("Invoked Method3\n");
-            return 3;
+            throw new Exception("This is a test exception");
         }
     }
 
@@ -39,10 +44,27 @@ namespace Recipe.ClassAndGeneric
 
             Console.WriteLine("Fire delegates in reverse");
             Delegate[] delegateList = allInstances.GetInvocationList();
+
+            List<Exception> invocationExceptions = new List<Exception>();
+
             foreach (Func<int> instance in delegateList.EveryOther())
             {
-               int retVal= instance();
-                Console.WriteLine($"Delegate returns {retVal}\n");
+                try
+                {
+                    int retVal = instance();
+                    Console.WriteLine($"Delegate returns {retVal}\n");
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine(ex.ToString());
+                    invocationExceptions.Add(ex);
+                }
+               
+            }
+
+            if (invocationExceptions.Count>0)
+            {
+                throw new MulticastInvocationException(invocationExceptions);
             }
         }
 
@@ -64,5 +86,49 @@ namespace Recipe.ClassAndGeneric
                 reNext = !reNext;
             }
         }
+    }
+
+    /// <summary>
+    /// Exception handler class
+    /// </summary>
+    [Serializable]
+    public class MulticastInvocationException : Exception
+    {
+        private List<Exception> _invocationExceptions;
+
+        public MulticastInvocationException() : base()
+        {
+
+        }
+
+        public MulticastInvocationException(IEnumerable<Exception> invocationExceptions)
+        {
+            this._invocationExceptions = new List<Exception>(invocationExceptions);
+        }
+
+        public MulticastInvocationException(string message):base(message)
+        {
+
+        }
+
+        public MulticastInvocationException(string message, Exception innerException) : base(message, innerException)
+        {
+
+        }
+
+        protected MulticastInvocationException(SerializationInfo info, StreamingContext context) : base(info, context)
+        {
+            _invocationExceptions = (List<Exception>) info.GetValue("InvocationExceptions", typeof(List<Exception>));
+        }
+
+        [SecurityPermission(SecurityAction.Demand,SerializationFormatter = true)]
+        public override void GetObjectData(SerializationInfo info, StreamingContext context)
+        {
+            info.AddValue("InvocationExceptions", this.InvocationExceptions);
+            base.GetObjectData(info, context);
+        }
+
+        public ReadOnlyCollection<Exception> InvocationExceptions
+            => new ReadOnlyCollection<Exception>(_invocationExceptions);
     }
 }

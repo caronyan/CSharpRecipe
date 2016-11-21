@@ -11,9 +11,24 @@ namespace CSharpRecipe
     {
         static void Main(string[] args)
         {
-            OrderByTest test = new OrderByTest();
-            test.SortByLinq();
+            IEnumerable<int> iterable = EnumeratorTest.CreateEnumerable();
+            IEnumerator<int> iterator = iterable.GetEnumerator();
+            Console.WriteLine("Start to iterate");
 
+            while (true)
+            {
+                Console.WriteLine("Calling MoveNext()...");
+                bool result = iterator.MoveNext();
+                Console.WriteLine($"...MoveNext result={result}");
+
+                if (!result)
+                {
+                    break;
+                }
+
+                Console.WriteLine("Fetching Current...");
+                Console.WriteLine($"...Current result={iterator.Current}");
+            }
 
             Console.ReadKey();
         }

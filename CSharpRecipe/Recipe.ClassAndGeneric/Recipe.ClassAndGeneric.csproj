@@ -41,7 +41,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ClonableClass.cs" />
+    <Compile Include="Closure.cs" />
     <Compile Include="ComparableImpl.cs" />
+    <Compile Include="EnumeratorWithYield.cs" />
     <Compile Include="GenericSample.cs" />
     <Compile Include="HookByPartial.cs" />
     <Compile Include="MulticastDelegate.cs" />

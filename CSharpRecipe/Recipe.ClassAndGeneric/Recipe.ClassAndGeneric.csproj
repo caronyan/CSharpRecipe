@@ -46,6 +46,7 @@
     <Compile Include="EnumeratorWithYield.cs" />
     <Compile Include="GenericSample.cs" />
     <Compile Include="HookByPartial.cs" />
+    <Compile Include="ListExtension.cs" />
     <Compile Include="MulticastDelegate.cs" />
     <Compile Include="MultiReturns.cs" />
     <Compile Include="OrderProc.cs" />

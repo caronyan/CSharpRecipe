@@ -15,19 +15,19 @@ namespace Recipe.ClassAndGeneric
             List<T> retObjs = new List<T>();
 
             int center = myList.BinarySearch(searchValue);
-            if (center>0)
+            if (center > 0)
             {
                 retObjs.Add(myList[center]);
 
                 int left = center;
-                while (left>0&&myList[left-1].Equals(searchValue))
+                while (left > 0 && myList[left - 1].Equals(searchValue))
                 {
                     left -= 1;
                     retObjs.Add(myList[center]);
                 }
 
                 int right = center;
-                while (right<(myList.Count-1)&&myList[right+1].Equals(searchValue))
+                while (right < (myList.Count - 1) && myList[right + 1].Equals(searchValue))
                 {
                     right += 1;
                     retObjs.Add(myList[center]);

@@ -44,6 +44,7 @@
     <Compile Include="Closure.cs" />
     <Compile Include="ComparableImpl.cs" />
     <Compile Include="EnumeratorWithYield.cs" />
+    <Compile Include="ExpressionTree.cs" />
     <Compile Include="GenericSample.cs" />
     <Compile Include="HookByPartial.cs" />
     <Compile Include="ListExtension.cs" />

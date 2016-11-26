@@ -48,6 +48,7 @@
     <Compile Include="GenericSample.cs" />
     <Compile Include="HookByPartial.cs" />
     <Compile Include="ListExtension.cs" />
+    <Compile Include="ManualExtensionWhere.cs" />
     <Compile Include="MulticastDelegate.cs" />
     <Compile Include="MultiReturns.cs" />
     <Compile Include="OrderProc.cs" />

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Recipe.ClassAndGeneric
+namespace Recipe.IteratorAndEnumerator
 {
     public static class ManualExtensionWhere
     {

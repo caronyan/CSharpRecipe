@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpRecipe", "CSharpRecip
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Recipe.ClassAndGeneric", "Recipe.ClassAndGeneric\Recipe.ClassAndGeneric.csproj", "{30D178CA-678F-480B-9C1A-E3A3FBBB7E29}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Recipe.IteratorAndEnumerator", "Recipe.IteratorAndEnumerator\Recipe.IteratorAndEnumerator.csproj", "{6B896719-A6DB-4F9B-8A42-2CC00EF1E107}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{30D178CA-678F-480B-9C1A-E3A3FBBB7E29}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{30D178CA-678F-480B-9C1A-E3A3FBBB7E29}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{30D178CA-678F-480B-9C1A-E3A3FBBB7E29}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6B896719-A6DB-4F9B-8A42-2CC00EF1E107}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B896719-A6DB-4F9B-8A42-2CC00EF1E107}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6B896719-A6DB-4F9B-8A42-2CC00EF1E107}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6B896719-A6DB-4F9B-8A42-2CC00EF1E107}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -43,13 +43,10 @@
     <Compile Include="ClonableClass.cs" />
     <Compile Include="Closure.cs" />
     <Compile Include="ComparableImpl.cs" />
-    <Compile Include="DictionarySorting.cs" />
     <Compile Include="EnumeratorWithYield.cs" />
     <Compile Include="ExpressionTree.cs" />
     <Compile Include="GenericSample.cs" />
     <Compile Include="HookByPartial.cs" />
-    <Compile Include="ListExtension.cs" />
-    <Compile Include="ManualExtensionWhere.cs" />
     <Compile Include="MulticastDelegate.cs" />
     <Compile Include="MultiReturns.cs" />
     <Compile Include="OrderProc.cs" />

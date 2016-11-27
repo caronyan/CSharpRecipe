@@ -43,6 +43,7 @@
     <Compile Include="ClonableClass.cs" />
     <Compile Include="Closure.cs" />
     <Compile Include="ComparableImpl.cs" />
+    <Compile Include="DictionarySorting.cs" />
     <Compile Include="EnumeratorWithYield.cs" />
     <Compile Include="ExpressionTree.cs" />
     <Compile Include="GenericSample.cs" />

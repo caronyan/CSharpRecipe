@@ -41,6 +41,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class1.cs" />
+    <Compile Include="CustomEnumerator.cs" />
     <Compile Include="DictionarySorting.cs" />
     <Compile Include="ListExtension.cs" />
     <Compile Include="ManualExtensionWhere.cs" />

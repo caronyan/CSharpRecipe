@@ -11,7 +11,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Recipe.IteratorAndEnumerato
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Recipe.DataType", "Recipe.DataType\Recipe.DataType.csproj", "{BCC7D475-3782-4BDB-9A91-B598117A4D87}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Recipe.LamdaAndLinq", "Recipe.LamdaAndLinq\Recipe.LamdaAndLinq.csproj", "{ED8E729F-8B69-4121-994A-D4E5014C6461}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Recipe.LambdaAndLinq", "Recipe.LamdaAndLinq\Recipe.LambdaAndLinq.csproj", "{ED8E729F-8B69-4121-994A-D4E5014C6461}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

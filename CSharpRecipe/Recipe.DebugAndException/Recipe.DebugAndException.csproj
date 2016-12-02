@@ -4,17 +4,15 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{045A2281-7C42-48FA-A30F-C8800B8015BC}</ProjectGuid>
-    <OutputType>Exe</OutputType>
+    <ProjectGuid>{6201768E-8DC5-4FE6-9CCA-FA9F199D4D40}</ProjectGuid>
+    <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>CSharpRecipe</RootNamespace>
-    <AssemblyName>CSharpRecipe</AssemblyName>
+    <RootNamespace>Recipe.DebugAndException</RootNamespace>
+    <AssemblyName>Recipe.DebugAndException</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -24,7 +22,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -43,33 +40,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Program.cs" />
+    <Compile Include="ReflectException.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Recipe.ClassAndGeneric\Recipe.ClassAndGeneric.csproj">
-      <Project>{30d178ca-678f-480b-9c1a-e3a3fbbb7e29}</Project>
-      <Name>Recipe.ClassAndGeneric</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Recipe.DataType\Recipe.DataType.csproj">
-      <Project>{bcc7d475-3782-4bdb-9a91-b598117a4d87}</Project>
-      <Name>Recipe.DataType</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Recipe.DebugAndException\Recipe.DebugAndException.csproj">
-      <Project>{6201768e-8dc5-4fe6-9cca-fa9f199d4d40}</Project>
-      <Name>Recipe.DebugAndException</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Recipe.IteratorAndEnumerator\Recipe.IteratorAndEnumerator.csproj">
-      <Project>{6b896719-a6db-4f9b-8a42-2cc00ef1e107}</Project>
-      <Name>Recipe.IteratorAndEnumerator</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Recipe.LamdaAndLinq\Recipe.LambdaAndLinq.csproj">
-      <Project>{ed8e729f-8b69-4121-994a-d4e5014c6461}</Project>
-      <Name>Recipe.LambdaAndLinq</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

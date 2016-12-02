@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Recipe.DataType", "Recipe.D
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Recipe.LambdaAndLinq", "Recipe.LamdaAndLinq\Recipe.LambdaAndLinq.csproj", "{ED8E729F-8B69-4121-994A-D4E5014C6461}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Recipe.DebugAndException", "Recipe.DebugAndException\Recipe.DebugAndException.csproj", "{6201768E-8DC5-4FE6-9CCA-FA9F199D4D40}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{ED8E729F-8B69-4121-994A-D4E5014C6461}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ED8E729F-8B69-4121-994A-D4E5014C6461}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ED8E729F-8B69-4121-994A-D4E5014C6461}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6201768E-8DC5-4FE6-9CCA-FA9F199D4D40}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6201768E-8DC5-4FE6-9CCA-FA9F199D4D40}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6201768E-8DC5-4FE6-9CCA-FA9F199D4D40}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6201768E-8DC5-4FE6-9CCA-FA9F199D4D40}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

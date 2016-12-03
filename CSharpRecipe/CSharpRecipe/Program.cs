@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -41,8 +42,31 @@ namespace CSharpRecipe
 
             #region Async Delegate Exception
 
-            AsyncDelegateException ade = new AsyncDelegateException();
-            ade.PollAsyncDelegate();
+            //AsyncDelegateException ade = new AsyncDelegateException();
+            //ade.PollAsyncDelegate();
+
+            #endregion
+
+            #region Process State Check
+
+            var processes = Process.GetProcesses().ToArray();
+            foreach (var proc in processes)
+            {
+                var state = ProcessRespondingCheck.GetProcessState(proc);
+
+                switch (state)
+                {
+                        case ProcessRespondingState.Responding:
+                            Console.WriteLine($"{proc.ProcessName} is responding.");
+                        break;
+                        case ProcessRespondingState.NotResponding:
+                        Console.WriteLine($"{proc.ProcessName} is not responding.");
+                        break;
+                    case ProcessRespondingState.UnKnown:
+                        Console.WriteLine($"{proc.ProcessName} is unknown.");                        
+                        break;
+                }
+            }
 
             #endregion
 

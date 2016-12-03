@@ -36,9 +36,15 @@ namespace CSharpRecipe
 
             #region Test Reflection Exception
 
-            ReflectException.ReflectionException();
-            #endregion 
+            //ReflectException.ReflectionException();
+            #endregion
 
+            #region Async Delegate Exception
+
+            AsyncDelegateException ade = new AsyncDelegateException();
+            ade.PollAsyncDelegate();
+
+            #endregion
 
             Console.ReadKey();
         }

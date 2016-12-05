@@ -45,6 +45,7 @@
     <Compile Include="CustomDebuggerDisplay.cs" />
     <Compile Include="CustomEventLog.cs" />
     <Compile Include="CustomException.cs" />
+    <Compile Include="ExceptionFilter.cs" />
     <Compile Include="PerformanceCounter.cs" />
     <Compile Include="ProcessRespondingCheck.cs" />
     <Compile Include="ReflectException.cs" />

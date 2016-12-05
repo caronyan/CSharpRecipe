@@ -43,6 +43,7 @@
     <Compile Include="AsyncDelegateException.cs" />
     <Compile Include="CustomEventLog.cs" />
     <Compile Include="CustomException.cs" />
+    <Compile Include="PerformanceCounter.cs" />
     <Compile Include="ProcessRespondingCheck.cs" />
     <Compile Include="ReflectException.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

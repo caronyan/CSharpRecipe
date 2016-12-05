@@ -49,24 +49,31 @@ namespace CSharpRecipe
 
             #region Process State Check
 
-            var processes = Process.GetProcesses().ToArray();
-            foreach (var proc in processes)
-            {
-                var state = ProcessRespondingCheck.GetProcessState(proc);
+            //var processes = Process.GetProcesses().ToArray();
+            //foreach (var proc in processes)
+            //{
+            //    var state = ProcessRespondingCheck.GetProcessState(proc);
 
-                switch (state)
-                {
-                        case ProcessRespondingState.Responding:
-                            Console.WriteLine($"{proc.ProcessName} is responding.");
-                        break;
-                        case ProcessRespondingState.NotResponding:
-                        Console.WriteLine($"{proc.ProcessName} is not responding.");
-                        break;
-                    case ProcessRespondingState.UnKnown:
-                        Console.WriteLine($"{proc.ProcessName} is unknown.");                        
-                        break;
-                }
-            }
+            //    switch (state)
+            //    {
+            //            case ProcessRespondingState.Responding:
+            //                Console.WriteLine($"{proc.ProcessName} is responding.");
+            //            break;
+            //            case ProcessRespondingState.NotResponding:
+            //            Console.WriteLine($"{proc.ProcessName} is not responding.");
+            //            break;
+            //        case ProcessRespondingState.UnKnown:
+            //            Console.WriteLine($"{proc.ProcessName} is unknown.");                        
+            //            break;
+            //    }
+            //}
+
+            #endregion
+
+            #region Debugger Display Test
+
+            TestDebuggerDisplay td = new TestDebuggerDisplay();
+            td.TestDisplay();
 
             #endregion
 

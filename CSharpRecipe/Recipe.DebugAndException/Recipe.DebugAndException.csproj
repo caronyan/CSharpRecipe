@@ -41,6 +41,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AsyncDelegateException.cs" />
+    <Compile Include="CustomDebuggerDisplay.cs" />
     <Compile Include="CustomEventLog.cs" />
     <Compile Include="CustomException.cs" />
     <Compile Include="PerformanceCounter.cs" />

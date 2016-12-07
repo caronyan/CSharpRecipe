@@ -2,10 +2,13 @@
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
+using System.Reflection;
+using System.Reflection.Emit;
 using System.Text;
 using System.Threading.Tasks;
 using Recipe.ClassAndGeneric;
 using Recipe.DebugAndException;
+using Recipe.ReflectionAndDynamic;
 
 namespace CSharpRecipe
 {
@@ -72,9 +75,15 @@ namespace CSharpRecipe
 
             #region Debugger Display Test
 
-            TestDebuggerDisplay td = new TestDebuggerDisplay();
-            td.TestDisplay();
+            //TestDebuggerDisplay td = new TestDebuggerDisplay();
+            //td.TestDisplay();
 
+            #endregion
+
+            #region Type Heritance
+
+            Assembly asm = Assembly.LoadFrom(@"E:\ComDedicated\Code\I200_Main\Script.I200.Web\bin\Script.I200.Model.dll");
+            TestDisplay.DisplayTypeHierarchies(asm);
             #endregion
 
             Console.ReadKey();

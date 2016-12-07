@@ -70,6 +70,10 @@
       <Project>{ed8e729f-8b69-4121-994a-d4e5014c6461}</Project>
       <Name>Recipe.LambdaAndLinq</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Recipe.ReflectionAndDynamic\Recipe.ReflectionAndDynamic.csproj">
+      <Project>{db73af64-7ef1-4318-9905-6c6be0b68bc5}</Project>
+      <Name>Recipe.ReflectionAndDynamic</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

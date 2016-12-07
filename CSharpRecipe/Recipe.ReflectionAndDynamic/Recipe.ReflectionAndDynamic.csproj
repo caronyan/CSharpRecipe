@@ -42,6 +42,7 @@
   <ItemGroup>
     <Compile Include="InheritanceHierarchy.cs" />
     <Compile Include="ListAssemblies.cs" />
+    <Compile Include="LocalVariable.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ReflectionInvoke.cs" />
   </ItemGroup>

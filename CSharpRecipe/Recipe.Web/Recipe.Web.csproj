@@ -40,6 +40,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="TcpServer.cs" />
+    <Compile Include="UrlContent.cs" />
     <Compile Include="WebProxy.cs" />
     <Compile Include="HttpWebRequest.cs" />
     <Compile Include="ResponseStatusHandling.cs" />

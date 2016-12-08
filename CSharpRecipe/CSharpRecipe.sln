@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Recipe.DebugAndException", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Recipe.ReflectionAndDynamic", "Recipe.ReflectionAndDynamic\Recipe.ReflectionAndDynamic.csproj", "{DB73AF64-7EF1-4318-9905-6C6BE0B68BC5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Recipe.Web", "Recipe.Web\Recipe.Web.csproj", "{45381ABF-68B1-45A2-906C-69C384FF1F2E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{DB73AF64-7EF1-4318-9905-6C6BE0B68BC5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DB73AF64-7EF1-4318-9905-6C6BE0B68BC5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DB73AF64-7EF1-4318-9905-6C6BE0B68BC5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{45381ABF-68B1-45A2-906C-69C384FF1F2E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{45381ABF-68B1-45A2-906C-69C384FF1F2E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{45381ABF-68B1-45A2-906C-69C384FF1F2E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{45381ABF-68B1-45A2-906C-69C384FF1F2E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

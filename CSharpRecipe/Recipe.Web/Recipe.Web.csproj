@@ -40,6 +40,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="WebProxy.cs" />
+    <Compile Include="HttpWebRequest.cs" />
     <Compile Include="ResponseStatusHandling.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

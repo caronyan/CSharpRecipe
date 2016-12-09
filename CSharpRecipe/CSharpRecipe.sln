@@ -19,6 +19,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Recipe.ReflectionAndDynamic
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Recipe.Web", "Recipe.Web\Recipe.Web.csproj", "{45381ABF-68B1-45A2-906C-69C384FF1F2E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Recipe.ThreadAndConcurrent", "Recipe.ThreadAndConcurrent\Recipe.ThreadAndConcurrent.csproj", "{448B1331-189E-44A3-A1B6-C6B5634C244F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -57,6 +59,10 @@ Global
 		{45381ABF-68B1-45A2-906C-69C384FF1F2E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{45381ABF-68B1-45A2-906C-69C384FF1F2E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{45381ABF-68B1-45A2-906C-69C384FF1F2E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{448B1331-189E-44A3-A1B6-C6B5634C244F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{448B1331-189E-44A3-A1B6-C6B5634C244F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{448B1331-189E-44A3-A1B6-C6B5634C244F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{448B1331-189E-44A3-A1B6-C6B5634C244F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

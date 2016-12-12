@@ -21,6 +21,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Recipe.Web", "Recipe.Web\Re
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Recipe.ThreadAndConcurrent", "Recipe.ThreadAndConcurrent\Recipe.ThreadAndConcurrent.csproj", "{448B1331-189E-44A3-A1B6-C6B5634C244F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Recipe.RegularExpressions", "RegularExpressions\Recipe.RegularExpressions.csproj", "{E4173629-F136-4689-9C93-32C7D697AFE2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Recipe.FileSystem", "Recipe.FileSystem\Recipe.FileSystem.csproj", "{5A614C06-60C5-4D72-B7B9-B55145142880}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -63,6 +67,14 @@ Global
 		{448B1331-189E-44A3-A1B6-C6B5634C244F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{448B1331-189E-44A3-A1B6-C6B5634C244F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{448B1331-189E-44A3-A1B6-C6B5634C244F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E4173629-F136-4689-9C93-32C7D697AFE2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E4173629-F136-4689-9C93-32C7D697AFE2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E4173629-F136-4689-9C93-32C7D697AFE2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E4173629-F136-4689-9C93-32C7D697AFE2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5A614C06-60C5-4D72-B7B9-B55145142880}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5A614C06-60C5-4D72-B7B9-B55145142880}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5A614C06-60C5-4D72-B7B9-B55145142880}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5A614C06-60C5-4D72-B7B9-B55145142880}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

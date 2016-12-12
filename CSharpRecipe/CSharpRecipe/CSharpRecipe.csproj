@@ -74,6 +74,10 @@
       <Project>{db73af64-7ef1-4318-9905-6c6be0b68bc5}</Project>
       <Name>Recipe.ReflectionAndDynamic</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Recipe.ThreadAndConcurrent\Recipe.ThreadAndConcurrent.csproj">
+      <Project>{448b1331-189e-44a3-a1b6-c6b5634c244f}</Project>
+      <Name>Recipe.ThreadAndConcurrent</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using Recipe.ClassAndGeneric;
 using Recipe.DebugAndException;
 using Recipe.ReflectionAndDynamic;
+using Recipe.ThreadAndConcurrent;
 
 namespace CSharpRecipe
 {
@@ -82,8 +83,13 @@ namespace CSharpRecipe
 
             #region Type Heritance
 
-            Assembly asm = Assembly.LoadFrom(@"E:\ComDedicated\Code\I200_Main\Script.I200.Web\bin\Script.I200.Model.dll");
-            TestDisplay.DisplayTypeHierarchies(asm);
+            //Assembly asm = Assembly.LoadFrom(@"E:\ComDedicated\Code\I200_Main\Script.I200.Web\bin\Script.I200.Model.dll");
+            //TestDisplay.DisplayTypeHierarchies(asm);
+            #endregion
+
+            #region Thread Static Field
+
+            TestClass.TestStaticField();
             #endregion
 
             Console.ReadKey();

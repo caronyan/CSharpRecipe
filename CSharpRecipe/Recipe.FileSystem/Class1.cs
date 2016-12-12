@@ -8,5 +8,6 @@ namespace Recipe.FileSystem
 {
     public class Class1
     {
+
     }
 }

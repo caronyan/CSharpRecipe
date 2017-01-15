@@ -177,21 +177,22 @@ namespace Recipe.Web
 
         private static X509Certificate GetServerCert(string subjectName)
         {
-            using (X509Store store = new X509Store(StoreName.My, StoreLocation.LocalMachine))
-            {
-                store.Open(OpenFlags.ReadOnly);
-                X509CertificateCollection certificate = store.Certificates.Find(X509FindType.FindBySubjectName,
-                    subjectName, validOnly: true);
+            X509Store store = new X509Store(StoreName.My, StoreLocation.LocalMachine);
+            //using (X509Store store = new X509Store(StoreName.My, StoreLocation.LocalMachine))
+            //{
+            store.Open(OpenFlags.ReadOnly);
+            X509CertificateCollection certificate = store.Certificates.Find(X509FindType.FindBySubjectName,
+                subjectName, validOnly: true);
 
-                if (certificate.Count > 0)
-                {
-                    return certificate[0];
-                }
-                else
-                {
-                    return null;
-                }
+            if (certificate.Count > 0)
+            {
+                return certificate[0];
             }
+            else
+            {
+                return null;
+            }
+            //}
         }
 
         #endregion
